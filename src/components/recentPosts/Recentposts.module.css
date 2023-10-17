@@ -1,0 +1,74 @@
+.container{
+    padding: 20px;
+}
+
+.heading{
+    font-weight: bold;
+    color: var(--text);
+    padding: 15px;
+}
+
+.subContainer3 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .Blog {
+    flex: 2; 
+  }
+  .Sidemenu {
+    flex: 1; 
+  }
+  
+  
+  @media screen and (max-width:1272px) {
+    .Blog{
+      flex:1.5;
+    }
+    .Sidemenu{
+      flex: 1;
+    }
+  }
+  
+  @media screen and (max-width: 1050px) {
+    .Sidemenu{
+      display: none;
+    }
+  }
+
+
+
+
+
+  /* Your existing styles... */
+
+.paginationContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.prevBtn {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.nextBtn {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+

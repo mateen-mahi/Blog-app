@@ -1,0 +1,66 @@
+/* Default styles for larger screens */
+.container {
+    text-align: center;
+    margin: 20px auto 30px auto;
+    max-width: 90%;
+  }
+  
+  .selectTitle {
+    font-size: 4vw;
+    margin-bottom: 30px;
+  }
+  
+  .fieldContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .fieldCard {
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .fieldCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .fieldCard span {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    transition: color 0.3s;
+  }
+  
+  .fieldCard:hover span {
+    color:#007bff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .container {
+      margin: 20px auto;
+    }
+  
+    .selectTitle {
+      font-size: 5vw;
+      margin-bottom: 20px;
+    }
+    .fieldCard span {
+      font-size: 16px;
+    }
+  }
+  

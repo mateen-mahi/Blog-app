@@ -1,0 +1,62 @@
+.mainContainer{
+    width: 90vw;
+    margin:auto;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+.ai{
+    background:rgb(253, 142, 142);
+  }
+  
+  .b-ch{
+    background:rgb(248, 214, 139);
+  }
+  .cyber{
+    background:rgb(138, 241, 202);
+  }
+  .iot{
+    background:rgb(247, 147, 213);
+  }
+  .web3{
+    background:rgb(178, 179, 248);
+  }
+  .web2{
+    background:rgb(234, 250, 147);
+  }
+
+
+
+
+
+  .ql-editor {
+    min-height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .ql-editor.ql-blank::before {
+    color: var(--text);
+  }
+  
+
+
+
+  .small-rounded-img{
+    border-radius: 50%;
+    border:1px solid var(--text);
+    align-self: center;
+    margin: 10px;
+    padding: 1px;
+  }

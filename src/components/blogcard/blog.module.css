@@ -1,0 +1,79 @@
+.parentContainer {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.container {
+  text-decoration: none;
+  background-color:var(--bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  min-height: 300px;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+.cardHeader {
+  background-color:var(--bg-soft);
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: var(--text-soft);
+}
+
+
+
+.dateCategory {
+  font-weight: 600;
+}
+
+.subContainer {
+  display: flex;
+}
+
+.imageContainer {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+  max-width: 320px;
+  align-self: center;
+  height: 160px;
+  overflow: hidden;
+}
+
+.textContainer {
+  flex: 2;
+  padding: 16px;
+}
+
+.headingText {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+@media (max-width: 640px) {
+
+
+  .container {
+    margin: 10px;
+  }
+
+  .imageContainer {
+    display: none;
+  }
+}

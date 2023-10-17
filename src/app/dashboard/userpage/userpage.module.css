@@ -1,0 +1,155 @@
+
+.logoutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-soft); 
+}
+
+.adminContainer {
+  background-color:var(--bg);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 80%;
+  overflow-x: scroll;
+  text-align: center;
+}
+
+.adminHeader {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.searchInput {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.userTable .th, .userTable .td {
+  padding: 8px 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.userTable .th {
+  background-color:var(--bg-soft);
+}
+
+.editIcon, .deleteIcon {
+  margin-right: 8px;
+  cursor: pointer;
+}
+.editIcon{
+  color: green;
+}
+
+.deleteIcon {
+  color: red;
+}
+
+.btn {
+  background-color: #0070f3;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.userContainer {
+  background-color:var(--bg);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageContainer {
+  margin-bottom: 20px;
+}
+
+.userInfo {
+  text-align: left;
+}
+
+.userInfoItem {
+  margin: 10px 0;
+}
+
+
+.adminMessage {
+  background-color:var(--bg);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.messageContainer {
+  background-color: var(--bg);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 15px;
+}
+
+.msgHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.msgDate {
+  font-size: 12px;
+  color: var(--text-soft);
+}
+
+.senderName {
+  font-weight: bold;
+}
+
+.number {
+  font-size: 14px;
+}
+
+.subject {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.messageContent {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .adminContainer, .userContainer {
+    width: 100%;
+  }
+}

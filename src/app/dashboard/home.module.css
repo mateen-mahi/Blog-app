@@ -1,0 +1,200 @@
+.homeContainer {
+  width: 90%;
+  margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .textContainer {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .headingText {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .gradientText {
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .icon {
+    display: inline-block;
+    margin-right: 4px; 
+    font-size: 24px; 
+    color: #007ACC
+  }
+  
+  .subHeading {
+    font-size: 24px;
+    margin-top: 10px;
+    background: linear-gradient(to right, #FF6A00, #EE0979);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .quote {
+    font-size: 18px;
+    margin-top: 20px;
+    color:var(--text);
+  }
+  
+  .mainText {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+    font-style: italic;
+    text-align: justify;
+    color: var(--text);
+  }
+
+
+
+
+.quotationMark {
+    font-size: 24px;
+    color: #FF6347; 
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+  
+  .emphasis {
+    font-style: italic;
+    color:var(--text); 
+  }
+  
+  .mottoHighlight {
+    font-weight: bold;
+    color: #FF6A00;
+  }
+  
+
+
+  
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+
+  .animatedImage {
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+ 
+  
+  .moveAnimation {
+    animation: move 4s ease-in-out infinite alternate;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(10px) scale(1.03);
+    }
+  }
+  
+  .animatedImage:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    
+  }
+
+
+  @media (max-width: 1000px) {
+    .homeContainer {
+      flex-direction: column;
+      width: auto;
+    }
+    .textContainer {
+      padding: 0;
+      text-align: center;
+    }
+    .imageContainer {
+      padding: 20px 0;
+    }
+  }
+  
+  @media (max-width: 680px) {
+    .imageContainer{
+      display: none;
+    }
+  }
+
+
+  .btnContainer{
+    width: 100%;
+    margin: 20px auto;
+
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.subContainer2 {
+  background-color: var(--bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+}
+
+.cardHeader {
+  background-color:var(--bg-soft);
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color:var(--text-soft);
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category {
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-weight: 600;
+  margin-top:10px;
+  font-size: 16px;
+}
+
+
+
