@@ -89,7 +89,7 @@ if("status" === "unauthenticated"){
         <p className={styles.errMsg}>{err}</p>
         <input type="submit" value="Submit" className={styles.btn} />
         <Link href="/register" className={styles.link}>
-          Don't have an account? <span className={styles.span}>Register</span>
+          Doesn&apos;t have an account? <span className={styles.span}>Register</span>
         </Link>
       </form>
       <p>.............. or ..............</p>

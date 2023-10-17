@@ -9,7 +9,7 @@ const Sidemenu = () => {
     <div className={styles.mainContainer}>
       <div className={styles.subContainer1}>
 <div className={styles.cardHeader}>
-<p className={styles.smTxt}>What's hot?</p>
+<p className={styles.smTxt}>What&apos;s hot?</p>
         <h3 className={styles.heading}>Most Popular</h3>
 </div>
           <div className={styles.popularCard}>
