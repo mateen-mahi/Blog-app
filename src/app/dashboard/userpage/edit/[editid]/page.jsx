@@ -27,7 +27,7 @@ const Contact = ({ params }) => {
     };
     fetchData();
 
-  }, [])
+  },[params.editid])
 
   const [formData, setFormData] = useState({
     name: "",
