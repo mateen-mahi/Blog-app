@@ -1,0 +1,41 @@
+
+.container {
+  background-color: var(--bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.categoryText {
+  font-size: 30px;
+  color: var(--text);
+  margin: 0;
+}
+
+.title {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.imageContainer {
+  position: relative;
+  width: 450px;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.textContent {
+  text-align: justify;
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 550px){
+  .imageContainer{
+    width: 260px;
+    height: 200px;
+  }
+}

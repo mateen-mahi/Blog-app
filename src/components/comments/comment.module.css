@@ -1,0 +1,86 @@
+.commentsContainer {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color:var(--bg-soft);
+    margin: 20px auto;
+  }
+  
+  .comHeading {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    color:var(--text);
+  }
+  
+  .CommentInputContainer {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    background-color:var(--bg);
+    color: var(--text);
+    margin-right: 10px;
+  }
+  
+  .button {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .userMainContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .userContainer {
+   
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .small-rounded-img {
+    border-radius: 50%;
+  }
+  
+  .userSubContainer {
+    flex: 1;
+    margin-left: 10px;
+  }
+  
+  .userName {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text);
+  }
+  
+  .date {
+    font-size: 14px;
+    color: var(--text-soft);
+  }
+  
+  .userText {
+    font-size: 16px;
+    color:var(--text-soft);
+  }
+  

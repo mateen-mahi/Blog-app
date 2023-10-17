@@ -1,0 +1,184 @@
+/* Footer Container */
+.footerContainer {
+  background-color: transparent;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:var(--text-soft);
+}
+
+/* Footer Content */
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+}
+
+
+.userInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  flex-wrap: wrap;
+  text-align: justify;
+  margin: 20px auto;
+}
+
+.userID {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.userImage {
+  margin-bottom: 10px;
+}
+
+.userImage .userImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.userName {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* User Description */
+.userDes {
+  font-size: 14px;
+  color: var(--text-soft);
+  text-align: left;
+  max-width: 300px;
+}
+
+/* List Container */
+.listContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* List */
+.list {
+  text-align: left;
+  margin: 20px auto;
+  justify-self: center;
+}
+
+.listHeading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footerList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerList li {
+  margin-bottom: 10px;
+}
+
+.footerList a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footerList a:hover {
+  color: #007acc;
+}
+
+/* Social Icons Container */
+.socialIconsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Social Icons */
+.socialIcon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.socialIcon:hover {
+  background-color:var(--bg-soft);
+}
+
+/* Facebook Icon */
+.facebook {
+  color: #1877f2;
+}
+
+/* Twitter Icon */
+.twitter {
+  color: #1da1f2;
+}
+
+/* Instagram Icon */
+.instagram {
+  color: #c13584;
+}
+
+/* LinkedIn Icon */
+.linkedin {
+  color: #0a66c2;
+}
+
+/* TikTok Icon */
+.tiktok {
+  color: #69c9d0;
+}
+
+/* YouTube Icon */
+.youtube {
+  color: #ff0000;
+}
+
+/* Footer Copyright */
+.footerCopyright {
+  color: var(--text);
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width:1044px) {
+.listContainer{
+  width: 100%;
+}
+.list{
+  text-align: center;
+}
+
+}
+
+@media (max-width: 400px) {
+  .listContainer{
+    flex-direction: column;
+  }
+  }

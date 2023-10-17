@@ -1,0 +1,96 @@
+/* Your existing styles... */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color:var(--soft-bg);
+}
+
+.form {
+  background:var(--bg);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.errMsg {
+  color: red;
+  margin: 10px 0;
+}
+
+.btn {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.link {
+  text-align: center;
+  text-decoration: none;
+  color: #007BFF;
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.link:hover {
+  color: #0056b3;
+}
+
+.providerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.googleProvider {
+  background-color: #9c2e2e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.githubProvider {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+
+.loading{
+  font-weight: 30px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  color:var(--text);
+}

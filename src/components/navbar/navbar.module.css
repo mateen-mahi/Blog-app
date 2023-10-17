@@ -1,0 +1,152 @@
+
+.navbar-container {
+  background-color: transparent;
+  position: relative;
+}
+
+.navbar-sub-container {
+  width: 100%;
+  color: var(--text);
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.brand:hover {
+  color: #007acc;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.listItem {
+  margin-right: 20px;
+}
+
+.link {
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #007acc; 
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: none; 
+}
+
+
+
+
+.switchContainer{
+  width: 60px;
+  height: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 100px;
+  right: 50px;
+   border: 1px solid white;
+  }
+.ball{
+  background: green;
+position: absolute;
+border-radius: 50%;
+height: 25px;
+width: 25px;
+
+}
+.moon,.sun{
+font-size:20px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .nav-links {
+    position: absolute;
+    top: -500px;
+  }
+
+  
+  .switchContainer{
+    right: 5px;
+  }
+ 
+  .hamburger-icon{
+    display: inline-block;
+  }
+
+  .nav-links.active {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background:var(--bg);
+    border: 1px solid var(--text-soft);
+    width: 80%;
+    border-radius: 15px;
+    top: 60px;
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .listItem{
+    margin-top: 20px;
+  }
+ 
+
+}
+
+
+
+.hamburger {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color:var(--text);
+  transition: transform 0.3s ease;
+}
+
+
+
+.cross .bar1 {
+  transform: translateY(10px) rotate(-45deg);
+
+}
+
+.cross .bar2 {
+  opacity: 0;
+}
+
+.cross .bar3 {
+  transform: translateY(5px) rotate(45deg);
+}
+

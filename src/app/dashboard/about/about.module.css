@@ -1,0 +1,131 @@
+/* about.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    text-align: justify;
+    margin: 20px auto;
+    padding: 40px;
+    background-color:var(--bg-soft); /* Background color */
+  }
+  
+  .imageContainer {
+    position: relative;
+    width: 80vw; /* Keep the width */
+    height: 60vh; /* Keep the height */
+    margin-bottom: 20px;
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  .imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color:var(--text);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .imageContainer:hover .imageOverlay {
+    background-color: rgba(0, 0, 0, 0.9); /* New background color on hover */
+}
+
+.imageTextContainer {
+    display: flex;
+    flex-direction: column;
+    z-index: 12;
+    transition: color 0.3s ease; 
+  }
+  
+  .imageText1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+  
+  .imageText2 {
+      font-size: 16px;
+    }
+    
+  .subContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.heading4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .pText1 {
+      font-size: 16px;
+      margin-bottom: 15px;
+  }
+  
+  .textContainer2 {
+      background-color: var(--bg);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .textContainer1,
+  .textContainer2 {
+      width: 500px;
+    }
+    
+    .pText {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .servicesList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+  
+    .imageTextContainer,
+  .servicesList span {
+      background-color: #007bff; /* Service background color */
+      color: #ffffff; /* Text color on service items */
+      padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+  
+.btnContainer {
+    margin-top: 20px;
+}
+  
+
+  .imageContainer:hover .imageTextContainer {
+    color: #ff6600; 
+  }
+
+
+
+  @media screen and (max-width:768px) {
+    
+    .imageContainer{
+      display: none;
+    }
+
+  }
