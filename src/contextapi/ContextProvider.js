@@ -5,10 +5,10 @@ const AppContext = createContext();
 
 
 const AppProvider = ({ children }) => {
-  const [theme, setTheme] = useState("light")
+  const [theme, setTheme] = useState("dark")
 
   const toggle = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
 
