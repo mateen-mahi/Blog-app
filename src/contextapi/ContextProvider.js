@@ -8,7 +8,7 @@ const AppProvider = ({ children }) => {
   const [theme, setTheme] = useState("dark")
 
   const toggle = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
 
