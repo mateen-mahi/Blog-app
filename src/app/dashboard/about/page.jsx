@@ -23,7 +23,7 @@ const About = () => {
           </a>
         </div>
         <Image
-          src="https://images.pexels.com/photos/577210/pexels-photo-577210.jpeg?auto=compress&cs=tinysrgb&w=600"
+          src="https://images.pexels.com/photos/7551442/pexels-photo-7551442.jpeg?auto=compress&cs=tinysrgb&w=600"
           alt="about cover "
           layout="fill"
           objectFit="cover"
@@ -60,11 +60,11 @@ const About = () => {
             unde inventore!
           </p>
           <div className={styles.servicesList}>
-            <span>Web Development</span>
-            <span>Mobile App Development</span>
-            <span>UI/UX Design</span>
-            <span>Digital Marketing</span>
-            <span>Data Analytics</span>
+            <span className={styles.span} >Web Development</span>
+            <span className={styles.span} >Mobile App Development</span>
+            <span className={styles.span} >UI/UX Design</span>
+            <span className={styles.span} >Digital Marketing</span>
+            <span className={styles.span} >Data Analytics</span>
           </div>
           <div className={styles.btnContainer}>
             <Button text="Contact" url="/dashboard/contact" />
