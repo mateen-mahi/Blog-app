@@ -16,6 +16,9 @@
 
 .CommentInputContainer {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -112,6 +115,7 @@
   .comHeading {
     font-size: 18px;
   }
+ 
 
   .userName {
     font-size: 16px;
@@ -124,4 +128,16 @@
   .userText {
     font-size: 14px;
   }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 359px) {
+  .button{
+    margin-top: 10px;
+      }
 }

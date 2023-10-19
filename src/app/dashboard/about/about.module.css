@@ -1,131 +1,107 @@
 /* about.module.css */
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 95%;
-    text-align: justify;
-    margin: 20px auto;
-    padding: 40px;
-    background-color:var(--bg-soft); /* Background color */
-  }
-  
-  .imageContainer {
-    position: relative;
-    width: 80vw; /* Keep the width */
-    height: 60vh; /* Keep the height */
-    margin-bottom: 20px;
-    overflow: hidden; /* Hide overflowing content */
-  }
-  
-  .imageOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    color:var(--text);
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
-  }
-  
-  .imageContainer:hover .imageOverlay {
-    background-color: rgba(0, 0, 0, 0.9); /* New background color on hover */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.imageContainer {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.imageText1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.imageText2 {
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 .imageTextContainer {
-    display: flex;
-    flex-direction: column;
-    z-index: 12;
-    transition: color 0.3s ease; 
-  }
-  
-  .imageText1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  text-decoration: none;
 }
 
+.subContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
 
-  
-  .imageText2 {
-      font-size: 16px;
-    }
-    
-  .subContainer {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
+.textContainer1,
+.textContainer2 {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background:var(--bg);
+  margin: 10px;
+  min-width: 250px;
 }
 
 .heading4 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 20px 0;
-  }
-  
-  .pText1 {
-      font-size: 16px;
-      margin-bottom: 15px;
-  }
-  
-  .textContainer2 {
-      background-color: var(--bg);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .textContainer1,
-  .textContainer2 {
-      width: 500px;
-    }
-    
-    .pText {
-        font-size: 16px;
-        margin-bottom: 15px;
-    }
-    
-    .servicesList {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-  
-    .imageTextContainer,
-  .servicesList span {
-      background-color: #007bff; /* Service background color */
-      color: #ffffff; /* Text color on service items */
-      padding: 5px 10px;
-    border-radius: 5px;
-    margin-right: 10px;
-    font-size: 14px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-  
+
+.pText1,
+.pText {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.servicesList {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.subContainer .span{
+  background: linear-gradient(135deg, #0099FF, #33CCFF);
+  margin: 10px;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px 0px 10px 0px ;
+  width: max-content;
+}
+
+.servicesList span {
+  display: block;
+  margin-bottom: 5px;
+}
+
 .btnContainer {
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
+
+
+@media screen and (max-width: 646px) {
+  .imageContainer{
+    display: none;
+  }
   
-
-  .imageContainer:hover .imageTextContainer {
-    color: #ff6600; 
-  }
-
-
-
-  @media screen and (max-width:768px) {
-    
-    .imageContainer{
-      display: none;
-    }
-
-  }
+}
