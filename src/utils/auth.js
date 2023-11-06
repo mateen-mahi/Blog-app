@@ -35,7 +35,12 @@ export const authOptions = {
               return null;
             }
   
-            return user;
+            return {
+              name : user.name,
+              email : user.email,
+              role : user.role,
+              id : user._id
+            };
           } catch (error) {
             console.log("Error Next auth: ", error);
           }
@@ -50,4 +55,20 @@ export const authOptions = {
     pages: {
       signIn: "/",
     },
-  };
+    callbacks: {
+      jwt(params){
+        if (params.user?.role) {
+          params.token.role = params.user.role;
+          params.token.id = params.user.id;
+        }
+        return params.token;
+      },    
+      session({session , token}){
+      if (session.user){
+        session.user.id = token.id
+        session.user.role = token.role
+      }
+        return session
+      }
+  }
+}

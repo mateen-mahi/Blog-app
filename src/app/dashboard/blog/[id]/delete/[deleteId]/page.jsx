@@ -36,7 +36,7 @@ const Page = ({ params }) => {
   router.push(`/dashboard/blog/${params.deleteId}`);
  }
   return (
-    (email === "irfanmalik@owner.ca" || email === "issac@admin.ca") ? (
+    (role === "admin" || role  === "owner") ? (
     <div className={styles.container}>
         <div className={styles.model}>
           <div className={styles.modelContent}>

@@ -11,6 +11,7 @@ const Logout = () => {
   const { data: session } = useSession();
   const imageUrl = session?.user?.image || "/irfan_sitting.png";
   const email = session?.user?.email;
+  const role = session?.user?.role;
   const [items, setItems] = useState([]);
   const [messages, setMessage] = useState([]);
   const [searchItem, setSearchItem] = useState("");
@@ -72,7 +73,7 @@ const Logout = () => {
 
   return (
     <div className={styles.logoutContainer}>
-      {(email === "irfanmalik@owner.ca") ? (
+      {(role === "owner") ? (
         <div className={styles.adminContainer}>
           <div className={styles.adminHeader}>
             <label htmlFor="search" className={styles.label}>

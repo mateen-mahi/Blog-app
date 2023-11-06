@@ -19,7 +19,7 @@ const Page = () => {
   const { data: session } = useSession();
   const authorImg = session?.user?.image || "/irfan_sitting.png";
   const author = session?.user?.name || "Unknown";
-  const email = session?.user?.email 
+  const role = session?.user?.role 
   const [img, setImg] = useState("");
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
@@ -124,7 +124,7 @@ const Page = () => {
   };
 
   return (
-    (email === "irfanmalik@owner.ca" || email === "issac@admin.ca") ? (
+    (role === "admin" || role  === "owner") ? (
     <div className={styles.container}>
       <p className={styles.headingTxt}>{text}</p>
       <input type="text" placeholder="Title" className={styles.input} onChange={handleTitleChange} />
