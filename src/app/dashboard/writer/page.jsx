@@ -92,7 +92,7 @@ const Page = () => {
     }
 
     try {
-      const response = await fetch(process.env.NEXT_PUBLIC_BLOG_API, {
+      const response = await fetch("/api/posts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

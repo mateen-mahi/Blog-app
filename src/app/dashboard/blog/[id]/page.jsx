@@ -2,12 +2,11 @@ import Image from "next/image";
 import styles from "./blogpost.module.css";
 import Link from "next/link";
 import { FaEdit, FaTrash } from "react-icons/fa";
-import Sidemenu from "@/components/sidemenu/Sidemenu";
 import Comment from "@/components/comments/Comment";
 import BlogContent from "@/components/blogContent/BlogContent";
 
 async function getData(id) {
-  const data = await fetch(`${process.env.NEXT_PUBLIC_BLOG_API}/${id}`, {
+  const data = await fetch(`/api/posts/${id}`, {
     cache: "no-store",
   });
 
@@ -61,7 +60,7 @@ const BlogPost = async ({ params }) => {
         <div className={styles.subContainer3}>
           <div className={styles.Blog}>
             <BlogContent content={postData.content} />
-            <Comment />
+            <Comment postid={`${params.id}`}/>
           </div>
         </div>
       </div>

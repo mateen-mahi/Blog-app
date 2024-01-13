@@ -4,7 +4,7 @@ import Editform from "@/components/Editform/Editform"
 const page = ({params}) => {
   return (
     <div className="container">
-        <Editform api={`${process.env.NEXT_PUBLIC_BLOG_API}/${params.edit}`} />
+        <Editform api={`${"/api/posts"}/${params.edit}`} />
     </div>
   )
 }

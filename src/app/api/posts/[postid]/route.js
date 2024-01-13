@@ -16,7 +16,7 @@ export const PUT = async (request, content) => {
   }
 };
 
-export const GET = async (request, content) => {
+export const GET = async (req,content) => {
   try {
     const postID = content.params.postid;
     const idValue = { _id: postID };
@@ -31,9 +31,9 @@ export const GET = async (request, content) => {
 
 
 
-export const DELETE = async (request, content) => {
+export const DELETE = async (request,{params}) => {
   try {
-    const postID = content.params.postid;
+    const postID =params.postid;
     const idValue = { _id: postID };
     await connect();
     const data = await Post.deleteOne(idValue);

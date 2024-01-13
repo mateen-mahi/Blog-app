@@ -4,12 +4,14 @@ import styles from "./comment.module.css";
 import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 
-const Comment = () => {
+const Comment = ({postid}) => {
   const { data: session } = useSession();
   const userImg = session?.user?.image || "/irfan_sitting.png";
   const user = session?.user?.name || "Unknown";
+  // console.log(session.user)
   const [description, setDescription] = useState("");
   const [comments, setComments] = useState([]);
+  const postId =  postid;
 
   const handleSendClick = async () => {
     if (!description) {
@@ -18,7 +20,7 @@ const Comment = () => {
     }
 
     try {
-      const response = await fetch(process.env.NEXT_PUBLIC_COMMENT_API, {
+      const response = await fetch("/api/comments", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -27,6 +29,7 @@ const Comment = () => {
           user,
           userImg,
           description,
+          postId,
         }),
       });
 
@@ -44,7 +47,7 @@ const Comment = () => {
 
   const getComments = async () => {
     try {
-      const response = await fetch(process.env.NEXT_PUBLIC_COMMENT_API);
+      const response = await fetch(`/api/posts/${postid}/comments`);
       if (response.ok) {
         const data = await response.json();
         setComments(data);

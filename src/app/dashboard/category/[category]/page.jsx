@@ -6,7 +6,7 @@ import BlogContent from "@/components/blogContent/BlogContent";
 
 const getData = async () => {
   try {
-    const response = await fetch(process.env.NEXT_PUBLIC_BLOG_API, {
+    const response = await fetch("/api/posts", {
       cache: "no-store",
     });
 

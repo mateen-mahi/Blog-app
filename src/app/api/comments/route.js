@@ -23,8 +23,8 @@ export async function POST(request) {
     await connect()
     const newComment = new Comment(payload);
     const result = await newComment.save();
-    return new Response(JSON.stringify({ result }), { status: 200, headers: { 'Content-Type': 'application/json' } });
+    return new NextResponse(JSON.stringify({ result }), { status: 200, headers: { 'Content-Type': 'application/json' } });
   } catch (error) {
-    return new Response(JSON.stringify({ error: 'An error occurred' }), { status: 500, headers: { 'Content-Type': 'application/json' } });
+    return new NextResponse(JSON.stringify({ error: 'An error occurred' }), { status: 500, headers: { 'Content-Type': 'application/json' } });
   }
 }

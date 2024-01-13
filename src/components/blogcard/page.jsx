@@ -27,7 +27,7 @@ const Blog = () => {
     // Fetch data on the client-side using JavaScript fetch
     const fetchData = async () => {
       try {
-        const response = await fetch(process.env.NEXT_PUBLIC_BLOG_API, {
+        const response = await fetch("/api/posts", {
           cache: "no-store",
         });
 

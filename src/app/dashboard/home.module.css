@@ -29,7 +29,8 @@
     display: inline-block;
     margin-right: 4px; 
     font-size: 24px; 
-    color: #007ACC
+    /* color: #007ACC */
+    color: #EE0979;
   }
   
   .subHeading {

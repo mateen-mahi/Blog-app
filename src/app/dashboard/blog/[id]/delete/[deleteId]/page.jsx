@@ -11,7 +11,7 @@ const Page = ({ params }) => {
   const email = session?.user?.email;
   const handleDelete = async () => {
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_BLOG_API}/${params.deleteId}`, {
+      const response = await fetch(`${"/api/posts"}/${params.deleteId}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
