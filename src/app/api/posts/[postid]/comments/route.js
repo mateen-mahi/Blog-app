@@ -5,6 +5,7 @@ import { Comment } from "@/models/Comment";
 
 
 export async function GET(req, {params}) {
+  console.log(params);
     try{
     const {postid} = params;
      await  connect();

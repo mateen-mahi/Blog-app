@@ -20,7 +20,7 @@ const Comment = ({postid}) => {
     }
 
     try {
-      const response = await fetch("/api/comments", {
+      const response = await fetch(/api/comments, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
